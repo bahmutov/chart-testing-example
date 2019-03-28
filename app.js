@@ -1,5 +1,7 @@
+import { labels } from './labels'
+
 const data = {
-  labels: ['winter', 'spring', 'summer', 'fall'],
+  labels,
   datasets: [
     {
       name: 'Sunny days',
