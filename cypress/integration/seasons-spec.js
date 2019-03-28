@@ -20,9 +20,10 @@ it('shows tooltip for each season', () => {
   })
 })
 
-it.only('shows tooltip for each defined label', () => {
+it('shows tooltip for each defined label', () => {
   const rectangles = '.frappe-chart g.dataset-0 rect'
 
+  // labels are accessed at run-time from the chart object
   cy.window()
     .its('chart.data.labels')
     // make sure we have a valid list with labels
