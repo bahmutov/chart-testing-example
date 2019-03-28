@@ -1,5 +1,3 @@
-// import { Chart } from 'frappe-charts/dist/frappe-charts.esm.js'
-
 const data = {
   labels: ['winter', 'spring', 'summer', 'fall'],
   datasets: [
@@ -10,13 +8,12 @@ const data = {
     }
   ]
 }
-
 const chart = new frappe.Chart('#chart', {
   title: 'Sunny days per year',
   data: data,
   type: 'bar',
   height: 250,
-  colors: ['#7cd6fd', '#743ee2']
+  colors: ['#7cd6fd']
 })
 
 if (window.Cypress) {
