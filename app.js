@@ -15,7 +15,7 @@ const chart = new frappe.Chart('#chart', {
   data: data,
   type: 'bar',
   height: 250,
-  colors: ['#7cd6fd']
+  colors: ['#816c30']
 })
 
 if (window.Cypress) {

@@ -6,6 +6,7 @@ beforeEach(() => {
 })
 
 it('shows tooltip for each season', () => {
+  // start new batch of images
   cy.eyesOpen({
     appName: 'chart-testing-example',
     batchName: 'tooltips'
@@ -23,9 +24,12 @@ it('shows tooltip for each season', () => {
 
     cy.get('.graph-svg-tip', { log: false }).should('contain', label)
 
+    // we limit the visual diff to the chart
     cy.eyesCheckWindow({
       sizeMode: 'selector',
       selector: '.frappe-chart'
     })
   })
+
+  cy.eyesClose() // tell Applitools we are done
 })
