@@ -20,7 +20,7 @@ it('shows tooltip for each season', () => {
     cy.get(rectangles)
       .eq(k)
       .trigger('mousemove')
-      .wait(500)
+      .wait(1000)
 
     cy.get('.graph-svg-tip', { log: false }).should('contain', label)
 
