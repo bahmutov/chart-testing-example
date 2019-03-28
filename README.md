@@ -1,4 +1,5 @@
-# chart-testing-example
+# chart-testing-example [![CircleCI](https://circleci.com/gh/bahmutov/chart-testing-example.svg?style=svg)](https://circleci.com/gh/bahmutov/chart-testing-example) [![renovate-app badge][renovate-badge]][renovate-app]
+
 > Testing an SVG chart using Cypress.io test runner
 
 See [cypress/integration/spec.js](cypress/integration/spec.js)
